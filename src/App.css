@@ -58,3 +58,57 @@
   vertical-align: middle;
 
 }
+
+.calendar {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: hidden;
+  overflow-x: scroll;
+} 
+
+.calendar .week {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.date { 
+ width: 200px;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+
+.datepicker-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   /* background-color: #fff; */
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.datepicker-container span {
+  font-size: 20px;
+}
+
+.today {
+  background-color: #ED6CBB;
+  color: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(2px 2px 2px #FD6CBB);
+}
+
+.selected {
+  border: 2px gray solid;
+  border-radius: 5px;
+}
